@@ -83,10 +83,10 @@ function pagarClicked(){
 
     console.log(mensajeFinal);
 
-    let name = "Charly";
+    let name = "Típicos Frank´s";
     const totalAPagar = document.querySelector(".carrito-precio-total").innerHTML;
     
-    const mensaje = `Hola ${name}, quiero estos producos:\n ${mensajeFinal}\n\n Total a pagar ${totalAPagar}`;
+    const mensaje = `Hola ${name}, quiero ordenar:\n ${mensajeFinal}\n\n Total a pagar ${totalAPagar}`;
     
         const url = `https://api.whatsapp.com/send/?phone=503720009133&text=${encodeURIComponent(mensaje)}&type=phone_number&app_absent=0`;
         window.open(url, '_blank');  
