@@ -88,7 +88,7 @@ function pagarClicked(){
     
     const mensaje = `Hola ${name}, quiero ordenar:\n ${mensajeFinal}\n\n Total a pagar ${totalAPagar}`;
     
-        const url = `https://api.whatsapp.com/send/?phone=503720009133&text=${encodeURIComponent(mensaje)}&type=phone_number&app_absent=0`;
+        const url = `https://api.whatsapp.com/send/?phone=50372009133&text=${encodeURIComponent(mensaje)}&type=phone_number&app_absent=0`;
         window.open(url, '_blank');  
         console.log(mensaje);
     
