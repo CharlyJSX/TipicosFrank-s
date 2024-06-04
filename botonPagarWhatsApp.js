@@ -39,12 +39,12 @@ function pagarClicked(){
 
     console.log(mensajeFinal);
 
-    let name = "Lic. Roberto";
+    let name = "Típicos Frank´s";
     const totalAPagar = document.querySelector(".carrito-precio-total").innerHTML;
     
-    const mensaje = `Hola ${name}, quiero estos producos:\n ${mensajeFinal}\n\n Total a pagar ${totalAPagar}`;
+    const mensaje = `Hola ${name}, quiero ordenar:\n ${mensajeFinal}\n\n Total a pagar ${totalAPagar}`;
     
-        const url = `https://api.whatsapp.com/send/?phone=50370487059&text=${encodeURIComponent(mensaje)}&type=phone_number&app_absent=0`;
+        const url = `https://api.whatsapp.com/send/?phone=50372009133&text=${encodeURIComponent(mensaje)}&type=phone_number&app_absent=0`;
         window.open(url, '_blank');  
         console.log(mensaje);
     
